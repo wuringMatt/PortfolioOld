@@ -1,0 +1,44 @@
+#projects{
+    background-color: $color2;
+    position: relative;
+    top: 70px;
+
+    .container {
+        padding-top: 50px;
+    }
+    .projects-wrapper{
+        width: 100%;
+        background-color: $color4;
+        padding-top: 50px;
+
+        h1{
+            width: 100%;
+            text-align: center;
+            color: $color2;
+            font-size: 40px;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 50px;
+
+            gap: 50px;
+
+            .item{
+                background-color: $color2;
+                height: 300px;
+                border-radius: 15px;
+                filter: drop-shadow(5px 5px 10px rgb(26, 26, 26));
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+            }
+
+            .item:hover{
+                transform: scale(102%);
+                transition: all 0.5s;
+                filter: drop-shadow(10px 10px 10px rgb(26, 26, 26));
+            }
+        }
+    }
+}

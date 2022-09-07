@@ -1,0 +1,55 @@
+.welcome{
+    height: 925px;
+    color: $color2;
+    font-size: 90px;
+
+    h3{
+        font-size: 40px;
+    }
+
+    .vertical-center{
+        position: absolute;
+        top: 47%;
+        transform: translateY(-50%);
+    }
+
+    .container{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        position: relative;
+        height: 100%;
+    }
+
+    .welcome-nav{
+        color: $color2;
+        font-size: 30px;
+        display: flex;
+        padding-top: 15px;
+        
+        li{
+            border-left: 1px solid $color4;
+            display: flex;
+
+            .cube{
+                visibility: hidden;
+                height: 100%;
+                width: 5px;
+                background-color: $color4;
+            }
+
+            a{
+                text-decoration: none;
+                color: $color2;
+                margin-right: 25px;
+                margin-left: 10px;
+            }
+        }
+
+        li:hover{
+            .cube{
+                visibility: visible;
+            }
+        }
+    }
+}
